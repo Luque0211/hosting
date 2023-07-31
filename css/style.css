@@ -1,0 +1,261 @@
+:root{
+    --sombra: 0px 0px 10px 1px rgba(0,0,0,0.59);
+    --sombra-in: 0px 0px 10px 3px rgba(0,0,0,0.7)inherit;
+
+    --blanco: #fff;
+    --negro: #000;
+    --gris_1: #616161;
+    --ocre: #fac929;
+    --amarillo: #ffe134;
+    --verde_poker: #559656;
+    --gris_principal: #2d2d2d;
+
+    --fuente_normal: 'Staatliches', cursive;
+    --fuente_negrita: 'Work Sans', sans-serif;
+
+}
+
+/*  tecnicos*/
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+body{
+    font-size: 15px;
+    
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+
+/* ---------------------globales */
+a{
+    text-decoration: none;
+    color: var(--negro);
+}
+*{
+    font-family: var(--fuente_normal);
+}
+
+h1{
+    color: var(--ocre);
+    font-size:4rem ;
+}
+
+/*----------------pagina de inicio--------*/
+.main___pahg1{
+    width: 100%;
+}
+.pag1__body{
+    background-color: var(--verde_poker);
+}
+
+/*--------centrar imagen*/
+.img__content__pag1{
+    width: 350px;
+    margin: 0 auto;
+    margin-top: 15rem;
+}
+@media (max-width: 500px){
+    .img__content__pag1{
+        width: 200px;
+    } 
+}
+
+.pag1__img{
+    width: 100%;
+}
+
+/*----------posicionar botones*/
+.pag1__section{
+    display: flex;
+    justify-content: space-around;
+    width: 55%;
+    margin: 0 auto;
+}
+@media (max-width: 500px){
+    .pag1__section{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: .7rem;
+    }
+}
+
+/*----------------estilo de botones*/
+.pag1__a{
+    color: var(--negro);
+    font-size: 2rem;
+    margin: 6rem 0;
+    background-color: var(--ocre);
+    padding: .5rem;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+}
+@media (max-width: 500px){
+    .pag1__a{
+        margin:.5rem;
+    }
+}
+
+.pag1__a:hover{
+    box-shadow: var(--sombra);
+    color: var(--gris_1);
+    background-color: var(--amarillo);
+    padding: .5rem 1.3rem
+}
+
+/*-------------footer*/
+.pag1__footer__hr{
+    margin-top: 30rem;
+    color: rgba(44, 62, 80, .7);
+    width: 80%;
+}
+
+.pag1__footer__content{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*estilo footer*/
+.pag1__footer__divNombres p{
+    font-size: 2rem;
+    margin-left: 1.2rem;
+    color: #2c3e50;
+}
+
+.pag1__footer__fivRedes{
+    margin-top: 2rem;
+}
+
+.pag1__footer__fivRedes svg{
+    margin-right: 1.2rem;
+}
+
+/*responsive footer*/
+@media (max-width: 500px){
+
+    .pag1__footer__content{
+        flex-direction: column-reverse;
+
+    }
+
+    .pag1__footer__divNombres{
+        text-align: center ;
+        margin: 0;
+    }
+
+    .pag1__footer__fivRedes{
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+
+/*==========================pagina2==========*/
+
+/*--nav*/
+.pag2__nav{
+    background-color: var(--verde_poker);
+    display: flex;
+    padding: 1rem;
+    
+}
+
+.pag2__nav__div__a{
+    display: flex;
+    align-items: center;
+    width: 60%;
+    justify-content: space-evenly;
+}
+
+
+.pag2__nav__a{
+    color: var(--blanco);
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.pag2__nav__a:hover{
+    background-color: var(--amarillo);
+    color: var(--negro);
+    border-radius: 5px;
+    box-shadow: var(--sombra);
+}
+
+.pag2__nav__div__img{
+    width: 40%;
+}
+
+.pag2__nav__img{
+    width: 7rem;
+    padding: 0;
+}
+
+/*header*/
+.pag2__header__img{
+    width: 100%;
+    box-shadow: var(--sombra-in);
+
+}
+
+/*main*/
+.pag2__main{
+    width: 75%;
+    margin: 5rem auto;
+    box-shadow: var(--sombra);
+    padding: 2rem;
+}
+
+/*sections a y b*/
+.pag2__sectionA, .pag2__sectionB{
+    display: flex;
+}
+
+
+.pag2__sections__50{
+    width: 50%;
+    margin: 0;
+    
+}
+
+/*section c*/
+
+.pag2__sectionC__contentUL{
+    display:flex;
+}
+
+.pag2__Ul1, .pag2__Ul2{
+    width: 50%;
+}
+/*footer*/
+.pag2__footer{
+    background-color: var(--verde_poker);
+    height: 13rem;
+    padding: 1rem;
+}
+
+.pag2__footer__content{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pag2__footer__fivRedes{
+    margin-top: 2rem;
+}
+
+.pag2__footer__fivRedes svg{
+    margin-right: 1.2rem;
+}
+
+.pag2__footer p{
+    font-size: 2rem;
+    margin-left: 1.2rem;
+    color: #2c3e50;
+}
